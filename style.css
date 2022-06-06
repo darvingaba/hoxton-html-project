@@ -29,7 +29,7 @@ header{
 .navbar{
     display: grid;
     place-content: end;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: bold;
     margin-left: 25%;
 }
@@ -113,4 +113,18 @@ main{
 .description a:hover{
     background-color: #C2DED1;
     color: #354259;
+}
+
+/* !FOOTER */
+
+footer{
+    display: grid;
+    place-items: center;
+    /* margin-top: 2rem; */
+    gap: .4rem;
+}
+.socials{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 3rem;
 }
