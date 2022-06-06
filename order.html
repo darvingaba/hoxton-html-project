@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prestige</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="order.css">
+</head>
+<body>
+    
     <header>
       <div class="logo">
         <h1 class="logo-text">PRESTIGE</h1>
@@ -17,33 +19,30 @@
             <ul class="navbar-ul">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a class="custom-order" href="/order.html">Order</a></li>
+                <li><a class="custom-order" href="contact.html">Order</a></li>
             </ul>
     </header>
 
-    <!-- TODO  MAIN-->
-    <main>
-        <div class="jewelry-img">
-            <img src="/img/diamond-main.png" alt="">
-        </div>
+    <div class="custom-order-text">
 
-        <div class="description">
-            <div class="description-text">
-                <p>"Jewelry has the power to be the one little thing that makes you feel <em>unique</em> "</p>
-                <br>
-                <p>Feel the <span>Prestige</span> touch with the finest pieces of <b>Art</b>.
-                </p>
-                
+        <h1>Custom Order</h1>
+
+        <p>Please describe the accessory that you want to order.</p>
+
+        <form>
+            <div class="name-email">
+                <!-- <label for="name">Name:</label> -->
+                <input type="text" name="name" id="name" placeholder="Enter your name">
+            
+                <!-- <label for="email">Email:</label> -->
+                <input type="email" name="email" id="email"     placeholder="Enter your email">
             </div>
+            
+            <textarea name="message" id="message" cols="50" rows="40" placeholder="Enter your message"></textarea>
+            
+            <input class="message-button" type="submit" value="Send">
+    </div>
 
-            <div class="description-link">
-                <a href="#">Explore</a>
-            </div>
-        </div>
-
-    </main>
-    
-    <!-- TODO FOOTER-->
     <footer>
 
         <div class="socials">
@@ -99,5 +98,5 @@
             <p>&copy; 2019 Prestige Jewelry</p>
         </div>
     </footer>
-  </body>
+</body>
 </html>
