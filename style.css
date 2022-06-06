@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Kaushan+Script&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+body{
+    background-color: #C2DED1;
+    display: grid;
+    grid-template-rows: auto 1fr auto; ;
+    height: 100vh;
+    font-family: "Roboto", sans-serif;
+}
+
+/* !HEADER */
+header{
+    display: grid;
+    grid-template-columns: 1fr  1fr;
+    place-items: center;
+    margin-top: 2rem;
+}
+.navbar{
+    display: grid;
+    place-content: end;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-left: 25%;
+}
+.navbar a{
+    color: #354259;
+}
+.navbar li{
+    display: inline-block;
+    margin: 0 10px;
+}
+.navbar-ul{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 2rem;
+}
+.logo{
+    font-family: 'Arizonia', "Roboto", sans-serif;
+    color: #27272A;
+    font-size: 1.2rem;
+    letter-spacing: .2rem;
+    margin-right: 20%;
+}
+.custom-order{
+    border: 1px solid #354259;
+    padding: 12px 25px;
+    border-radius: 25px;
+    transition: all .2s ease-in-out;
+}
+.navbar a:hover{
+    border-bottom: 1px solid black;
+}
+.custom-order:hover{
+    background-color: #354259;
+    color: #C2DED1;
+}
+
+/* !main container */
+main{
+    /* height: 100%; */
+    display: grid;
+    /* grid-auto-flow: column; */
+    grid-template-columns: auto auto ;
+    place-items: center;
+    padding: 5% 10%;
+}
+.description{
+    display: grid;
+    margin: 0 20%;
+    gap: 1.4rem;
+}
+.description p{
+    font-size: 2rem;
+    /* font-weight: bold; */
+    color: #354259;
+}
+.description em{
+    color:#659ede ;
+}
+.description span{
+    font-size: 2rem;
+    color: #364eb1;
+}
+.jewelry-img{
+    margin-left: 20%;
+}
+.jewelry-img > img{
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+.description a{
+    background-color:#364eb1 ;
+    font-size: 1.5rem;
+    color: #C2DED1;
+    padding-top: 2rem;
+    border: 1px solid #364eb1;
+    padding: 12px 25px;
+    border-radius: 25px;
+    transition: all .2s ease-in-out;
+}
+.description a:hover{
+    background-color: #C2DED1;
+    color: #354259;
+}
