@@ -51,6 +51,7 @@ header{
     font-size: 1.2rem;
     letter-spacing: .2rem;
     margin-right: 20%;
+    text-shadow: 1px 1px 0px #ff000064;
 }
 .custom-order{
     border: 1px solid #354259;
