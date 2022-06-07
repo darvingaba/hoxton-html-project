@@ -42,4 +42,5 @@ textarea{
     border: none;
     background-color: #364eb1;
     color: #C2DED1;
+    cursor: pointer;
 }
