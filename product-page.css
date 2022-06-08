@@ -39,7 +39,7 @@ footer{
     border: 1px solid #C2DED1;
     padding: .6rem 1.2rem;
     transition: all .3s ease-in-out;
-    /* gap: 1rem; */
+    gap: 1rem;
 }
 .order-body-card:hover{
     background-color: #C2DED1;
@@ -59,8 +59,8 @@ footer{
 .order-body-card img{
     /* margin-bottom: 1.4rem; */
     object-fit: cover;
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    height: 175px;
 }
 .details .material{
     color: #888788;
@@ -90,7 +90,7 @@ footer{
     padding: 2px 6px;
     color: rgba(255, 0, 0, 0.694);
     left: 75px;
-    top: -10px;
+    top: -8px;
     font-weight: bold;
     border-top-right-radius: .5rem;
 }
