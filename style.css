@@ -25,6 +25,7 @@ header{
     grid-template-columns: 1fr  1fr;
     place-items: center;
     margin-top: 2rem;
+    animation: appear 0.5s ease-in-out;
 }
 .navbar{
     display: grid;
@@ -95,6 +96,7 @@ main{
 }
 .jewelry-img{
     margin-left: 20%;
+    animation: appearFromBack 0.5s ease-in-out;
 }
 .jewelry-img > img{
     width: 100%;
@@ -129,3 +131,23 @@ footer{
     grid-auto-flow: column;
     gap: 3rem;
 }
+
+@keyframes appear{
+    0%{
+        transform: translateY(-100px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@keyframes appearFromBack{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+    
+
