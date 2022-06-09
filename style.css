@@ -27,6 +27,12 @@ header{
     margin-top: 2rem;
     animation: appear 0.5s ease-in-out;
 }
+.mobile-header{
+    display: none;
+}
+/* .mobile-header span{
+    margin-left: 1rem;
+} */
 .navbar{
     display: grid;
     place-content: end;
@@ -51,7 +57,7 @@ header{
     color: #27272A;
     font-size: 1.2rem;
     letter-spacing: .2rem;
-    margin-right: 20%;
+    /* margin-right: 20%; */
     text-shadow: 1px 1px 0px #ff000064;
 }
 .custom-order{
@@ -72,8 +78,8 @@ header{
 main{
     /* height: 100%; */
     display: grid;
-    /* grid-auto-flow: column; */
-    grid-template-columns: auto auto ;
+    grid-auto-flow: column;
+    /* grid-template-columns: auto auto ; */
     place-items: center;
     padding: 5% 10%;
 }
@@ -123,7 +129,7 @@ main{
 footer{
     display: grid;
     place-items: center;
-    /* margin-top: 2rem; */
+    padding-bottom: 1rem;
     gap: .4rem;
 }
 .socials{
@@ -149,5 +155,52 @@ footer{
         transform: scale(1);
     }
 }
-    
 
+
+@media screen and (max-width: 1000px){
+    header{
+        display: none;
+    }
+    .mobile-header{
+        display: grid;
+        grid-template-rows: 1fr auto;
+    }
+    main{
+        display: grid;
+        grid-auto-flow: row;
+    }
+    .jewelry-img{
+    margin: 3rem 5rem;
+    }
+    .mobile-header .logo{
+        font-size: .8rem;
+    }
+    .jewelry-img > img{
+    padding: 0rem 4rem;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .jewelry-img{
+    margin: 1rem 3rem;
+    }
+}
+@media screen and (max-width:450px) {
+    .jewelry-img{
+    margin: 0rem 0rem;
+    }
+}
+@media screen and (max-width:375px) {
+    .description{
+        margin-bottom: 1rem;
+    }
+    .second-p{
+        display: none;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .mobile-header .logo{
+        margin-left: 1rem;
+    }
+}

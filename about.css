@@ -21,3 +21,22 @@ h2{
     font-weight: bold;
     color: #354259;
 }
+p{
+    font-size: 1.2rem;
+    color: #354259;
+}
+@media screen and (max-width: 1024px){
+    .text-section{
+        padding: 0 20%;
+    }
+}
+@media screen and (max-width: 425px){
+    .text-section{
+        padding: 0 10%;
+    }
+}
+@media screen and (max-width: 320px){
+    .text-section{
+        padding: 0 5%;
+    }
+}
